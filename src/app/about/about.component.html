@@ -1,0 +1,7 @@
+<div ngClass="flex items-center flex-col m-12 gap-4">
+    <div ngClass="font-bold">{{ anime.title }}</div>
+    <div ngClass="italic" *ngIf="anime.year">{{ anime.year }}</div>
+    <div ngClass="italic" *ngIf="!anime.year">No release date available</div>
+    <img src="{{ anime.images.jpg.image_url }}" alt="" srcset="" />
+    <div ngClass="text-center w-3/5">{{ anime.synopsis }}</div>
+</div>

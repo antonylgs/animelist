@@ -1,0 +1,8 @@
+<div ngClass="flex w-full justify-between">
+  <div ngClass="font-bold">{{ anime.score }} ⭐️</div>
+  <div ngClass="italic" *ngIf="anime.year">{{ anime.year }}</div>
+  <div ngClass="italic" *ngIf="!anime.year">No release date available</div>
+</div>
+<div ngClass="font-bold text-center mt-8">{{ anime.title }}</div>
+<img ngClass="h-[200px]" src="{{ anime.images.jpg.image_url }}" />
+<div>{{ getShortenDescription(anime.synopsis) }}</div>
